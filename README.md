@@ -18,7 +18,8 @@ this will include all files automaticly.
 
 
 
-```<!DOCTYPE html>
+```
+<!DOCTYPE html>
 <html>
   <head>
     <script src="./cascadify/include.js"></script>
@@ -30,12 +31,14 @@ this will include all files automaticly.
         <a href="#"></a>
       </div>
       <div body>
-        <-- your body here -->
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a. 
       </div>
       <div footer>
-        <-- footer here -->
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a. 
       </div>
     </div>
   </body>
-</html>```
+</html>
+
+```
 
