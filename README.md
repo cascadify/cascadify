@@ -13,7 +13,15 @@ you can include it in html like this:
 
 this will include all files automaticly.
 
+## Themes
+you can add the attribute "theme" to any element.
 
+example
+
+´<div theme="green-code"></div>´
+
+There are the following themes:
+'green-code', 'dark', 'nature' and 'ocean'
 ## Examples
 
 
@@ -41,4 +49,5 @@ this will include all files automaticly.
 </html>
 
 ```
+
 
