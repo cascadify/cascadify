@@ -18,7 +18,7 @@ you can add the attribute "theme" to any element.
 
 example
 
-´<div theme="green-code"></div>´
+`<div theme="green-code"></div>`
 
 There are the following themes:
 'green-code', 'dark', 'nature' and 'ocean'
