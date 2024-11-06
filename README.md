@@ -12,7 +12,7 @@ you can include it in html like this:
 `<script src="./cascadify/include.js"></script>`
 
 this will include all files automaticly.
-
+## [Docs](./docs/index.md)
 ## Themes
 you can add the attribute "theme" to any element.
 
