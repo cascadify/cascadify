@@ -8,5 +8,5 @@
 - ## Components
     - ### [Buttons](./btn.md)
     - ### [Forms](./forms.md)
-    - ### [Cards](./cards.md)
+    - ### [Cards](./card.md)
     - ### [Tables](./tables.md)
