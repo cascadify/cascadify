@@ -2,7 +2,7 @@
 
 
 ## Background
-`<div class="bg-<color>"></div>`
+`<div class="bg-<color></div>`
 
 ### the colors are: black, cyan, white, red, yellow, green, orange, blue and purple
 
@@ -16,7 +16,7 @@
 
 ## Resize
 
-`<div class="resizeable"></div>` there is also 'resizeable-vertical' and 'resizeable-horizontal'
+`<div class="resizeable></div>` there is also 'resizeable-vertical' and 'resizeable-horizontal'
 
 ## Cascadify Theme
 
