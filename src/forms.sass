@@ -1,0 +1,104 @@
+// Basis Styles für alle Form-Elemente
+input, textarea, select, button
+  font-family: inherit
+  font-size: 1rem
+  color: #333
+  background-color: #fff
+  border: 1px solid #ccc
+  border-radius: 4px
+  padding: 0.5rem 0.75rem
+  transition: border-color 0.2s ease, box-shadow 0.2s ease
+  outline: none
+  box-sizing: border-box
+
+// Fokus-Effekt
+input:focus, textarea:focus, select:focus
+  border-color: #3a87ad
+  box-shadow: 0 0 5px rgba(58, 135, 173, 0.5)
+
+// Disabled & Readonly
+input:disabled, textarea:disabled, select:disabled,
+input[readonly], textarea[readonly], select[readonly]
+  background-color: #f5f5f5
+  color: #999
+  cursor: not-allowed
+  border-color: #ddd
+
+textarea
+  min-height: 100px
+  resize: vertical
+
+select
+  appearance: none
+  background-image: url("data:image/svg+xml;charset=US-ASCII,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='5'><polygon points='0,0 10,0 5,5' fill='%233a87ad'/></svg>")
+  background-repeat: no-repeat
+  background-position: right 0.75rem center
+  background-size: 10px 5px
+  padding-right: 2rem
+  cursor: pointer
+
+label
+  display: block
+  margin-bottom: 0.3rem
+  font-weight: 600
+  color: #222
+
+.form-group
+  margin-bottom: 1rem
+
+.form-error
+  color: #dc3545
+  font-size: 0.85rem
+  margin-top: 0.25rem
+
+input[type="checkbox"], input[type="radio"]
+  width: auto
+  margin-right: 0.5rem
+  vertical-align: middle
+  cursor: pointer
+
+button[type="submit"], button[type="button"]
+  @extend button
+  background-color: #3a87ad
+  color: white
+  border: none
+  cursor: pointer
+
+  &:hover
+    background-color: #2c6d8c
+input-group
+  display: inline-flex
+  align-items: center
+  border-radius: 4px
+  overflow: hidden
+  border: 1px solid #ccc
+
+  input, textarea, select, button
+    border-radius: 0
+    margin: 0
+    border: none
+    padding: 0.5rem 0.75rem
+    font-family: inherit
+    font-size: 1rem
+    color: #333
+    background-color: #fff
+    outline: none
+    box-sizing: border-box
+
+    &:focus
+      outline: none
+      box-shadow: 0 0 5px rgba(58, 135, 173, 0.5)
+
+  input:first-child,
+  textarea:first-child,
+  select:first-child,
+  button:first-child
+    border-top-left-radius: 4px
+    border-bottom-left-radius: 4px
+
+  input:last-child,
+  textarea:last-child,
+  select:last-child,
+  button:last-child
+    border-top-right-radius: 4px
+    border-bottom-right-radius: 4px

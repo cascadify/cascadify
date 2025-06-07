@@ -1,0 +1,63 @@
+
+
+@mixin theme_gen($bg, $fg, $ac)
+  background-color: $bg
+  box-shadow: 0 0 1px rgba($bg, .25)
+  color: $fg
+  accent-color: $ac
+
+
+*[theme="green-code"], *[theme="green-code"] *
+  @include theme_gen(#000000, #0fff00, #0fff00)
+  font-family: 'Monaco', Menlo, 'DejaVu Sans Mono', monospace
+*[theme="forrest"], *[theme="forrest"] *
+  @include theme-gen(#009c00, #3a2f19, #3a2f19)
+
+  &[theme-variant="dark"]
+    background-color: #003300
+    color: #9bcc9b
+
+  &[theme-variant="light"]
+    background-color: #a2d08c
+    color: #254117
+
+  &[theme-variant="high-contrast"]
+    background-color: black
+    color: lime
+*[theme="light-calm"], *[theme="light-calm"] *
+  @include theme_gen(#f9f9f7, #2e2e2e, #7fbaa0)
+  font-family: 'Segoe UI', sans-serif
+  font-weight: 400
+*[theme="dark-night"], *[theme="dark-night"] *
+  @include theme_gen(#1c1c1c, #dddddd, #4fd1c5)
+  font-family: 'Roboto', sans-serif
+*[theme="retro-terminal"], *[theme="retro-terminal"] *
+  @include theme_gen(#000000, #00ff66, #00ff66)
+  font-family: 'Courier New', Courier, monospace
+  font-size: 14px
+  text-shadow: 0 0 2px #00ff66
+*[theme="woodland"], *[theme="woodland"] *
+  @include theme_gen(#f0ebe1, #3a2f19, #7b5e3b)
+  font-family: 'Palatino Linotype', Palatino, serif
+  font-weight: 600
+*[theme="playful"], *[theme="playful"] *
+  @include theme_gen(#fff8e6, #453c67, #e94560)
+  font-family: 'Comic Sans MS', cursive, sans-serif
+  font-weight: bold
+*[theme="blue-doc"], *[theme="blue-doc"] *
+  @include theme_gen(#eaf4fc, #1e3a5f, #3b82f6)
+  font-family: 'Times New Roman', serif
+  line-height: 1.6
+*[theme="neo"], *[theme="neo"] *
+  @include theme_gen(#ffffff, #111111, #00aaff)
+  font-family: 'Inter', sans-serif
+  font-weight: 500
+  letter-spacing: 0.01em
+
+
+
+
+
+
+*[theme][theme-variant="dark"]
+  filter: brightness(0.9)
